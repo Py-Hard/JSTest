@@ -1,0 +1,94 @@
+/* The Worst Website Ever Created */
+
+body {
+  background: url("https://i.imgur.com/2yaf2kP.gif"),
+              repeating-linear-gradient(90deg, red, yellow 10px, lime 20px);
+  background-blend-mode: difference;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #00ffea;
+  text-shadow: 3px 3px 0px black, -3px -3px 0px magenta;
+  animation: bgspin 3s linear infinite;
+  padding: 20px;
+}
+
+@keyframes bgspin {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(360deg); }
+}
+
+h1 {
+  font-size: 90px;
+  background: linear-gradient(to right, cyan, magenta, yellow, lime);
+  border: 10px groove hotpink;
+  padding: 20px;
+  animation: shake 0.1s infinite alternate;
+}
+
+@keyframes shake {
+  from { transform: translateX(-5px) rotate(-2deg); }
+  to { transform: translateX(5px) rotate(2deg); }
+}
+
+p {
+  font-size: 32px;
+  background: rgba(255, 0, 255, 0.4);
+  border: 6px dashed #00ff00;
+  padding: 15px;
+  margin: 20px 0;
+  animation: pulse 0.4s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(1.1); opacity: 0.6; }
+}
+
+#OTC {
+  font-weight: bold;
+  color: #fffb00;
+  font-size: 40px;
+  text-shadow: 4px 4px 0px red;
+}
+
+#TB {
+  margin-top: 30px;
+  padding: 25px 40px;
+  font-size: 36px;
+  background: repeating-linear-gradient(45deg, #ff00ff, #ff00ff 10px, #00ffff 10px, #00ffff 20px);
+  border: 12px ridge #ffff00;
+  cursor: pointer;
+  color: white;
+  text-shadow: 3px 3px 0px black;
+  animation: blink 0.2s infinite alternate, spin 4s linear infinite;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0.2; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Netscape Navigator badge container */
+.netscape-badge {
+  margin-top: 40px;
+  padding: 10px;
+  border: 8px inset #00ffea;
+  background: repeating-linear-gradient(
+    135deg,
+    #ff0000,
+    #ff0000 10px,
+    #0000ff 10px,
+    #0000ff 20px
+  );
+  width: fit-content;
+  animation: spinBadge 6s linear infinite;
+}
+
+@keyframes spinBadge {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
